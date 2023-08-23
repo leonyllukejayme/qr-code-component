@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@400;700&family=Poppins&display=swap');
+
+body {
+	background: #d4e0ee;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	padding: 194px 0;
+	justify-content: center;
+	align-items: center;
+}
+.qrcomponent {
+	display: flex;
+	width: 368px;
+	/* height: 636px; */
+	padding: 18px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 5px;
+	flex-shrink: 0;
+	background-color: white;
+	border-radius: 20px;
+}
+.qr {
+	height: 360px;
+	align-self: stretch;
+	border-radius: 20px;
+}
+.textParagraph {
+	display: flex;
+	padding: 0 25px;
+	flex-direction: column;
+	align-items: center;
+	gap: 22px;
+	flex: 1 0 0;
+	align-self: stretch;
+}
+.title {
+	text-align: center;
+	font-family: Outfit;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	height: 30px;
+}
+.sub {
+	color: rgb(0, 0, 0, 0.5);
+	text-align: center;
+	font-family: Outfit;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media screen and (max-width: 375px) {
+	.qrcomponent {
+		width: 285px;
+		gap: 0;
+	}
+	.qr {
+		height: 293px;
+		flex-shrink: 0;
+	}
+	.title {
+		font-size: 20px;
+	}
+	.sub {
+		gap: 10px;
+	}
+}
